@@ -1,0 +1,992 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <!-- ================================================
+    META BÁSICO
+  ================================================== -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+  <!-- SEO -->
+  <title>Mariana Domeneghetti | Fisioterapia e Pilates</title>
+  <meta name="description" content="Fisioterapeuta e instrutora de Pilates, Mariana Domeneghetti realiza atendimentos domiciliares personalizados com foco em prevenção, reabilitação, movimento e qualidade de vida." />
+  <meta name="keywords" content="fisioterapia domiciliar, fisioterapeuta, pilates, reabilitação, atendimento domiciliar, Mariana Domeneghetti" />
+  <meta name="robots" content="index, follow" />
+  <meta name="author" content="Mariana Domeneghetti" />
+
+  <!-- Open Graph -->
+  <meta property="og:type"        content="website" />
+  <meta property="og:title"       content="Mariana Domeneghetti | Fisioterapia e Pilates" />
+  <meta property="og:description" content="Fisioterapia e Pilates com atendimento domiciliar personalizado, com foco em prevenção, recuperação e qualidade de vida." />
+  <meta property="og:image"       content="img/mariana-principal.jpeg" />
+  <!-- og:url — adicionar URL real após publicação -->
+  <!-- <meta property="og:url" content="https://www.SEUDOMINIO.com.br" /> -->
+
+  <!-- Favicon -->
+  <link rel="icon"             type="image/png" href="favicon/favicon-32x32.png" sizes="32x32" />
+  <link rel="icon"             type="image/png" href="favicon/favicon-16x16.png" sizes="16x16" />
+  <link rel="apple-touch-icon"                  href="favicon/apple-touch-icon.png" />
+  <!-- <link rel="manifest" href="favicon/site.webmanifest" /> -->
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600&family=Caveat:wght@500;600;700&display=swap"
+    rel="stylesheet"
+  />
+
+  <!-- Font Awesome -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+
+  <!-- Estilos -->
+  <link rel="stylesheet" href="css/style.css" />
+
+  <!-- ================================================
+    Schema.org — Dados estruturados
+    Apenas informações reais disponíveis.
+    Não foram incluídos: endereço, CRM, telefone,
+    preço, horário ou avaliações.
+  ================================================== -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Mariana Domeneghetti",
+    "jobTitle": "Fisioterapeuta e Instrutora de Pilates",
+    "description": "Fisioterapeuta e instrutora de Pilates que realiza atendimentos domiciliares personalizados com foco em movimento e qualidade de vida.",
+    "knowsAbout": [
+      "Fisioterapia",
+      "Pilates",
+      "Fisioterapia domiciliar",
+      "Fisioterapia preventiva",
+      "Reabilitação funcional",
+      "Consciência corporal"
+    ],
+    "makesOffer": [
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Fisioterapia domiciliar",
+          "serviceType": "Fisioterapia"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Pilates",
+          "serviceType": "Pilates"
+        }
+      }
+    ]
+  }
+  </script>
+</head>
+
+<body>
+
+  <!-- ================================================
+    SKIP LINK — Acessibilidade por teclado
+  ================================================== -->
+  <a href="#main-content" class="skip-link">Ir para o conteúdo principal</a>
+
+  <!-- ================================================
+    HEADER
+  ================================================== -->
+  <header class="header transparent" id="site-header" role="banner">
+    <div class="container">
+      <div class="header__inner">
+
+        <!-- Logotipo / Identidade -->
+        <a href="#inicio" class="header__logo" aria-label="Mariana Domeneghetti — início">
+          <span class="header__logo-name">Mariana Domeneghetti</span>
+          <span class="header__logo-subtitle">Fisioterapia e Pilates</span>
+        </a>
+
+        <!-- Navegação desktop -->
+        <nav class="header__nav" aria-label="Navegação principal">
+          <a href="#inicio"      class="nav__link" id="nav-inicio">Início</a>
+          <a href="#sobre"       class="nav__link" id="nav-sobre">Sobre mim</a>
+          <a href="#servicos"    class="nav__link" id="nav-servicos">Serviços</a>
+          <a href="#atendimento" class="nav__link" id="nav-atendimento">Atendimento</a>
+          <a href="#contato"     class="nav__link" id="nav-contato">Contato</a>
+        </nav>
+
+        <!-- CTA desktop: direciona ao WhatsApp/Agendamento -->
+        <a
+          href="#"
+          class="btn btn-primary header__cta"
+          data-whatsapp
+          aria-label="Agendar atendimento pelo WhatsApp"
+        >
+          Agendar
+        </a>
+
+        <!-- Botão hambúrguer mobile -->
+        <button
+          class="header__hamburger"
+          id="hamburger-btn"
+          aria-label="Abrir menu de navegação"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <span class="hamburger__line" aria-hidden="true"></span>
+          <span class="hamburger__line" aria-hidden="true"></span>
+          <span class="hamburger__line" aria-hidden="true"></span>
+        </button>
+
+      </div>
+    </div>
+  </header>
+
+  <!-- ================================================
+    MENU MOBILE
+  ================================================== -->
+  <nav
+    class="header__mobile-menu"
+    id="mobile-menu"
+    aria-label="Menu mobile"
+    aria-hidden="true"
+  >
+    <a href="#inicio"      class="mobile-nav__link">Início</a>
+    <a href="#sobre"       class="mobile-nav__link">Sobre mim</a>
+    <a href="#servicos"    class="mobile-nav__link">Serviços</a>
+    <a href="#atendimento" class="mobile-nav__link">Atendimento</a>
+    <a href="#contato"     class="mobile-nav__link">Contato</a>
+    <a
+      href="#contato"
+      class="btn btn-primary mobile-nav__cta"
+      aria-label="Ir para seção de contato"
+    >
+      Fale comigo
+    </a>
+  </nav>
+
+  <!-- ================================================
+    CONTEÚDO PRINCIPAL
+  ================================================== -->
+  <main id="main-content">
+
+    <!-- ============================================
+      SEÇÃO 1 — HERO
+    ============================================= -->
+    <section class="hero" id="inicio" aria-labelledby="hero-title">
+
+      <!-- Elementos decorativos de fundo -->
+      <div class="hero__bg-blob"   aria-hidden="true"></div>
+      <div class="hero__bg-blob-2" aria-hidden="true"></div>
+
+      <div class="container">
+        <div class="hero__inner">
+
+          <!-- Conteúdo textual -->
+          <div class="hero__content">
+            <p class="hero__badge">
+              <i class="fa-solid fa-circle-dot" aria-hidden="true"></i>
+              Fisioterapia e Pilates
+            </p>
+
+            <h1 class="hero__title" id="hero-title">
+              Cuidado e movimento<br />
+              <span>no conforto</span><br />
+              da sua casa.
+            </h1>
+
+            <p class="hero__description">
+              Atendimento fisioterapêutico domiciliar personalizado,
+              com foco em prevenção, recuperação, movimento e qualidade de vida.
+            </p>
+
+            <div class="hero__actions">
+              <a
+                href="#"
+                class="btn btn-primary btn-lg"
+                data-whatsapp
+                aria-label="Agendar atendimento pelo WhatsApp"
+                id="hero-cta"
+              >
+                <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
+                Agendar atendimento
+              </a>
+
+              <a href="#sobre" class="btn btn-outline" aria-label="Conhecer mais sobre Mariana">
+                Conhecer mais
+              </a>
+            </div>
+          </div>
+
+          <!-- Imagem da profissional -->
+          <div class="hero__image-wrapper" aria-hidden="true">
+            <div class="hero__image-blob"></div>
+            <div class="hero__image-blob-accent"></div>
+            <div class="hero__image-blob-accent-2"></div>
+
+            <img
+              class="hero__img"
+              src="img/mariana-principal.jpeg"
+              alt="Mariana Domeneghetti, fisioterapeuta e instrutora de Pilates, com jaleco branco"
+              width="480"
+              height="560"
+              fetchpriority="high"
+            />
+
+            <!-- Badge flutuante decorativo -->
+            <div class="hero__floating-badge">
+              <i class="fa-solid fa-house-medical" aria-hidden="true"></i>
+              <div class="hero__floating-badge-text">
+                <strong>Atendimento domiciliar</strong>
+                <span>No conforto da sua casa</span>
+              </div>
+            </div>
+          </div>
+
+        </div><!-- /.hero__inner -->
+      </div><!-- /.container -->
+
+      <!-- Indicador de scroll (decorativo) -->
+      <div class="hero__scroll-hint" aria-hidden="true">
+        <div class="scroll-dot"></div>
+        <span>Rolar</span>
+      </div>
+
+    </section>
+
+    <!-- ============================================
+      SEÇÃO 2 — MINHA TRAJETÓRIA (SOBRE MIM)
+    ============================================= -->
+    <section class="trajetoria section-padding" id="sobre" aria-labelledby="about-title">
+
+      <!-- Elementos decorativos de ambientação e fundo -->
+      <div class="trajetoria__bg-leaves" aria-hidden="true"></div>
+      <div class="trajetoria__bg-studio" aria-hidden="true"></div>
+
+      <div class="container">
+        <div class="trajetoria__inner">
+
+          <!-- COLUNA ESQUERDA: Textos, Timeline e Botões -->
+          <div class="trajetoria__col-left">
+
+            <!-- Cabeçalho textual -->
+            <div class="trajetoria__header reveal">
+              <p class="trajetoria__badge" aria-label="Seção: Sobre mim">
+                <span class="trajetoria__badge-line" aria-hidden="true"></span>
+                SOBRE MIM
+              </p>
+
+              <h2 class="trajetoria__title" id="about-title">
+                Minha trajetória
+              </h2>
+
+              <p class="trajetoria__subtitle">
+                Cuidado que transforma vidas, em todas as fases.
+              </p>
+
+              <p class="trajetoria__intro">
+                Sou Mariana Domeneghetti, fisioterapeuta e instrutora de Pilates,
+                apaixonada pelo movimento humano e pelo impacto positivo que a
+                fisioterapia pode gerar na vida das pessoas. Acredito que o cuidado
+                vai muito além do tratamento de dores — é sobre qualidade de vida,
+                autonomia e bem-estar.
+              </p>
+            </div>
+
+            <!-- Timeline profissional com 4 marcos e linha contínua -->
+            <div class="trajetoria__timeline reveal reveal-delay-1" role="list" aria-label="Linha do tempo profissional">
+
+              <!-- Item 1: Graduação -->
+              <div class="timeline__item" role="listitem">
+                <div class="timeline__icon-box" aria-hidden="true">
+                  <i class="fa-solid fa-graduation-cap"></i>
+                </div>
+                <div class="timeline__content">
+                  <h3 class="timeline__title">Graduação</h3>
+                  <p class="timeline__text">
+                    Me formei em Fisioterapia pela Estácio, onde construí uma base sólida
+                    de conhecimentos e desenvolvi meu olhar humanizado para o cuidado
+                    com o paciente.
+                  </p>
+                </div>
+              </div>
+
+              <!-- Item 2: Especialização e prática -->
+              <div class="timeline__item" role="listitem">
+                <div class="timeline__icon-box" aria-hidden="true">
+                  <i class="fa-solid fa-dumbbell"></i>
+                </div>
+                <div class="timeline__content">
+                  <h3 class="timeline__title">Especialização e prática</h3>
+                  <p class="timeline__text">
+                    Desde o início da minha formação, busquei me aprofundar em áreas
+                    como fisioterapia musculoesquelética e Pilates, unindo ciência,
+                    movimento e bem-estar.
+                  </p>
+                </div>
+              </div>
+
+              <!-- Item 3: Atuação -->
+              <div class="timeline__item" role="listitem">
+                <div class="timeline__icon-box" aria-hidden="true">
+                  <i class="fa-solid fa-shield-heart"></i>
+                </div>
+                <div class="timeline__content">
+                  <h3 class="timeline__title">Atuação</h3>
+                  <p class="timeline__text">
+                    Hoje, realizo atendimentos domiciliares, levando um cuidado
+                    personalizado, seguro e adaptado à rotina de cada pessoa, sempre
+                    com foco na prevenção, recuperação e no movimento funcional.
+                  </p>
+                </div>
+              </div>
+
+              <!-- Item 4: Meu propósito -->
+              <div class="timeline__item" role="listitem">
+                <div class="timeline__icon-box" aria-hidden="true">
+                  <i class="fa-solid fa-user-group"></i>
+                </div>
+                <div class="timeline__content">
+                  <h3 class="timeline__title">Meu propósito</h3>
+                  <p class="timeline__text">
+                    Continuar aprendendo e ajudar cada paciente a redescobrir o prazer
+                    de se movimentar, com mais saúde, autonomia e leveza.
+                  </p>
+                </div>
+              </div>
+
+            </div><!-- /.trajetoria__timeline -->
+
+            <!-- Botões de ação inferiores -->
+            <div class="trajetoria__actions reveal reveal-delay-2">
+              <a href="#servicos" class="btn btn-trajetoria-primary" id="trajetoria-btn-servicos">
+                <span>Conhecer meus serviços</span>
+                <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+              </a>
+
+              <a
+                href="#"
+                class="btn btn-trajetoria-outline"
+                data-whatsapp
+                aria-label="Agendar atendimento pelo WhatsApp"
+                id="trajetoria-btn-agendar"
+              >
+                <span>Agendar atendimento</span>
+              </a>
+            </div>
+
+          </div><!-- /.trajetoria__col-left -->
+
+          <!-- COLUNA DIREITA: Composição visual (forma verde, foto real, frase manuscrita, card) -->
+          <div class="trajetoria__col-right reveal">
+            <div class="trajetoria__visual">
+
+              <!-- Grande forma orgânica verde-sálvia com linhas curvas/botânicas decorativas -->
+              <div class="trajetoria__blob-wrap" aria-hidden="true">
+                <svg class="trajetoria__blob-svg" viewBox="0 0 520 620" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <!-- Forma orgânica verde sálvia -->
+                  <path
+                    d="M240 22 C370 12 490 85 508 215 C526 345 480 475 412 560 C344 645 190 635 105 540 C20 445 12 320 38 200 C64 80 110 32 240 22 Z"
+                    fill="#C2CEC4"
+                  />
+                  <!-- Linhas botânicas decorativas em branco suave -->
+                  <g stroke="rgba(255,255,255,0.72)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M55 375 Q85 300 75 235 Q102 250 112 280 Q125 225 150 248"/>
+                    <path d="M68 355 Q115 325 138 295"/>
+                    <path d="M42 405 Q68 435 98 425"/>
+                    <path d="M465 240 Q495 295 480 355" stroke-width="1.4" opacity="0.65"/>
+                  </g>
+                </svg>
+              </div>
+
+              <!-- Fotografia profissional real da Mariana recortada -->
+              <div class="trajetoria__photo-wrap">
+                <picture>
+                  <source srcset="img/mariana-recorte.webp" type="image/webp" />
+                  <img
+                    src="img/mariana-recorte.png"
+                    alt="Mariana Domeneghetti, fisioterapeuta e instrutora de Pilates, com jaleco branco e estetoscópio"
+                    class="trajetoria__photo"
+                    width="440"
+                    height="620"
+                    loading="lazy"
+                  />
+                </picture>
+              </div>
+
+              <!-- Frase manuscrita verde em estilo cursivo -->
+              <div class="trajetoria__handwritten" aria-hidden="true">
+                <div class="handwritten__quote">
+                  <span class="handwritten__quote-mark">“</span>Movimento<br />
+                  para uma vida<br />
+                  mais leve<span class="handwritten__quote-mark">”</span>
+                </div>
+                <svg class="handwritten__heart" viewBox="0 0 32 32" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M16 27 C16 27 4 18.5 4 10.5 C4 6.2 7.2 3.5 11 3.5 C13.5 3.5 15.2 4.8 16 6.5 C16.8 4.8 18.5 3.5 21 3.5 C24.8 3.5 28 6.2 28 10.5 C28 18.5 16 27 16 27 Z"/>
+                </svg>
+              </div>
+
+              <!-- Card flutuante minimalista de bem-estar com ícone botânico de lótus -->
+              <div class="trajetoria__floating-card" role="complementary" aria-label="Mensagem de bem-estar">
+                <div class="floating-card__icon" aria-hidden="true">
+                  <svg viewBox="0 0 36 36" width="30" height="30" fill="none" stroke="#2F6659" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M18 7 C18 7 13.5 14 13.5 20 C13.5 23.5 15.5 26 18 26 C20.5 26 22.5 23.5 22.5 20 C22.5 14 18 7 18 7 Z"/>
+                    <path d="M13 20 C9 17 4.5 18 4 21 C3.5 23.5 7 26 13 26"/>
+                    <path d="M23 20 C27 17 31.5 18 32 21 C32.5 23.5 29 26 23 26"/>
+                    <path d="M9 28 C13 29.5 23 29.5 27 28"/>
+                  </svg>
+                </div>
+                <div class="floating-card__text">
+                  <span>Saúde, movimento</span>
+                  <span>e bem-estar em</span>
+                  <span>cada etapa da sua vida.</span>
+                </div>
+              </div>
+
+            </div><!-- /.trajetoria__visual -->
+          </div><!-- /.trajetoria__col-right -->
+
+        </div><!-- /.trajetoria__inner -->
+      </div><!-- /.container -->
+    </section>
+
+    <!-- ============================================
+      SEÇÃO 3 — SERVIÇOS
+    ============================================= -->
+    <section class="services section-padding bg-light" id="servicos" aria-labelledby="services-title">
+      <div class="container">
+
+        <header class="services__header reveal">
+          <p class="section-label">Serviços</p>
+          <h2 class="section-title" id="services-title">Como posso te ajudar?</h2>
+          <p class="section-subtitle">
+            Atendimentos planejados de forma individualizada, respeitando seus objetivos e seu momento.
+          </p>
+        </header>
+
+        <div class="services__grid" role="list" aria-label="Lista de serviços">
+
+          <!-- Card 1 -->
+          <article class="service-card reveal reveal-delay-1" role="listitem">
+            <div class="service-card__icon" aria-hidden="true">
+              <i class="fa-solid fa-house-medical"></i>
+            </div>
+            <h3 class="service-card__title">Fisioterapia domiciliar</h3>
+            <p class="service-card__text">
+              Atendimento fisioterapêutico no conforto do seu lar, adaptado ao seu ambiente e com atenção exclusiva às suas necessidades.
+            </p>
+          </article>
+
+          <!-- Card 2 -->
+          <article class="service-card reveal reveal-delay-2" role="listitem">
+            <div class="service-card__icon" aria-hidden="true">
+              <i class="fa-solid fa-shield-heart"></i>
+            </div>
+            <h3 class="service-card__title">Fisioterapia preventiva</h3>
+            <p class="service-card__text">
+              Atendimento voltado para prevenção de lesões, melhora da mobilidade, fortalecimento e promoção da qualidade de vida.
+            </p>
+          </article>
+
+          <!-- Card 3 -->
+          <article class="service-card reveal reveal-delay-3" role="listitem">
+            <div class="service-card__icon" aria-hidden="true">
+              <i class="fa-solid fa-person-walking"></i>
+            </div>
+            <h3 class="service-card__title">Reabilitação funcional</h3>
+            <p class="service-card__text">
+              Acompanhamento direcionado para a recuperação funcional, alívio de desconfortos e retomada segura dos movimentos diários.
+            </p>
+          </article>
+
+          <!-- Card 4 -->
+          <article class="service-card reveal reveal-delay-1" role="listitem">
+            <div class="service-card__icon" aria-hidden="true">
+              <i class="fa-solid fa-person-running"></i>
+            </div>
+            <h3 class="service-card__title">Pilates e movimento</h3>
+            <p class="service-card__text">
+              Prática focada no controle do movimento, fortalecimento muscular, flexibilidade e consciência corporal.
+            </p>
+          </article>
+
+          <!-- Card 5 -->
+          <article class="service-card reveal reveal-delay-2" role="listitem">
+            <div class="service-card__icon" aria-hidden="true">
+              <i class="fa-solid fa-child-reaching"></i>
+            </div>
+            <h3 class="service-card__title">Cuidado postural e mobilidade</h3>
+            <p class="service-card__text">
+              Orientações e exercícios para melhora da postura, equilíbrio e bem-estar nas atividades do dia a dia.
+            </p>
+          </article>
+
+          <!-- Card 6 -->
+          <article class="service-card reveal reveal-delay-3" role="listitem">
+            <div class="service-card__icon" aria-hidden="true">
+              <i class="fa-solid fa-hand-holding-heart"></i>
+            </div>
+            <h3 class="service-card__title">Acompanhamento individualizado</h3>
+            <p class="service-card__text">
+              Cuidado humanizado e atento a cada etapa, respeitando o ritmo e as preferências de cada pessoa.
+            </p>
+          </article>
+
+        </div><!-- /.services__grid -->
+      </div>
+    </section>
+
+    <!-- ============================================
+      SEÇÃO 4 — ATENDIMENTO DOMICILIAR
+    ============================================= -->
+    <section class="home-care section-padding" id="atendimento" aria-labelledby="home-care-title">
+      <div class="container">
+        <div class="home-care__inner">
+
+          <!-- Imagem de atendimento -->
+          <div class="home-care__image-area reveal">
+            <img
+              class="home-care__img img--homecare"
+              src="img/atendimento-04.jpeg"
+              alt="Mariana Domeneghetti acompanhando exercício de ponte com bola suíça em atendimento domiciliar"
+              width="480"
+              height="580"
+              loading="lazy"
+            />
+            <div class="home-care__img-overlay" aria-hidden="true">
+              <i class="fa-solid fa-location-dot"></i>
+              <div class="home-care__img-overlay-text">
+                <strong>Atendimento domiciliar</strong>
+                <span>Na sua casa, no seu ritmo</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Conteúdo -->
+          <div class="home-care__content reveal reveal-delay-2">
+            <p class="section-label">Atendimento domiciliar</p>
+            <h2 class="section-title" id="home-care-title">
+              Fisioterapia onde você estiver.
+            </h2>
+
+            <p class="home-care__intro">
+              O atendimento domiciliar permite que você receba cuidados
+              fisioterapêuticos profissionais sem precisar sair de casa. É uma
+              modalidade ideal para quem busca comodidade, atenção exclusiva ou
+              prefere realizar suas sessões em um ambiente familiar e acolhedor.
+            </p>
+
+            <!-- Benefícios -->
+            <div class="home-care__benefits" role="list" aria-label="Benefícios do atendimento domiciliar">
+
+              <div class="benefit-item" role="listitem">
+                <div class="benefit-item__icon" aria-hidden="true">
+                  <i class="fa-solid fa-couch"></i>
+                </div>
+                <div class="benefit-item__text">
+                  <strong>Comodidade</strong>
+                  <span>Tratamento no ambiente em que você se sente à vontade</span>
+                </div>
+              </div>
+
+              <div class="benefit-item" role="listitem">
+                <div class="benefit-item__icon" aria-hidden="true">
+                  <i class="fa-solid fa-user-check"></i>
+                </div>
+                <div class="benefit-item__text">
+                  <strong>Atendimento exclusivo</strong>
+                  <span>Atenção totalmente voltada para você durante a sessão</span>
+                </div>
+              </div>
+
+              <div class="benefit-item" role="listitem">
+                <div class="benefit-item__icon" aria-hidden="true">
+                  <i class="fa-solid fa-heart-pulse"></i>
+                </div>
+                <div class="benefit-item__text">
+                  <strong>Cuidado próximo</strong>
+                  <span>Acompanhamento atento às suas necessidades e ao seu bem-estar</span>
+                </div>
+              </div>
+
+              <div class="benefit-item" role="listitem">
+                <div class="benefit-item__icon" aria-hidden="true">
+                  <i class="fa-solid fa-house-chimney-medical"></i>
+                </div>
+                <div class="benefit-item__text">
+                  <strong>No seu ambiente</strong>
+                  <span>O atendimento considera sua rotina e seu espaço</span>
+                </div>
+              </div>
+
+            </div><!-- /.home-care__benefits -->
+
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================
+      SEÇÃO 5 — COMO FUNCIONA
+    ============================================= -->
+    <section class="how-it-works section-padding bg-light" id="como-funciona" aria-labelledby="how-title">
+      <div class="container">
+
+        <header class="how-it-works__header reveal">
+          <p class="section-label">Processo</p>
+          <h2 class="section-title" id="how-title">Como funciona o atendimento?</h2>
+          <p class="section-subtitle">
+            Simples, direto e pensado para facilitar o seu primeiro contato.
+          </p>
+        </header>
+
+        <div class="steps" role="list" aria-label="Etapas do atendimento">
+
+          <!-- Etapa 1 -->
+          <div class="step reveal reveal-delay-1" role="listitem">
+            <div class="step__number" aria-label="Etapa 1">01</div>
+            <div>
+              <div class="step__icon" aria-hidden="true">
+                <i class="fa-brands fa-whatsapp"></i>
+              </div>
+              <h3 class="step__title">Primeiro contato</h3>
+              <p class="step__text">
+                Você entra em contato pelo WhatsApp para conversarmos sobre sua necessidade e tirar suas primeiras dúvidas.
+              </p>
+            </div>
+          </div>
+
+          <!-- Etapa 2 -->
+          <div class="step reveal reveal-delay-3" role="listitem">
+            <div class="step__number" aria-label="Etapa 2">02</div>
+            <div>
+              <div class="step__icon" aria-hidden="true">
+                <i class="fa-solid fa-clipboard-list"></i>
+              </div>
+              <h3 class="step__title">Avaliação inicial</h3>
+              <p class="step__text">
+                Conversamos para que eu conheça seu histórico, sua rotina e os objetivos que você deseja alcançar.
+              </p>
+            </div>
+          </div>
+
+          <!-- Etapa 3 -->
+          <div class="step reveal reveal-delay-5" role="listitem">
+            <div class="step__number" aria-label="Etapa 3">03</div>
+            <div>
+              <div class="step__icon" aria-hidden="true">
+                <i class="fa-solid fa-house-user"></i>
+              </div>
+              <h3 class="step__title">Atendimento no seu lar</h3>
+              <p class="step__text">
+                Iniciamos as sessões no conforto da sua casa, com cuidado humanizado e adaptado ao seu ritmo.
+              </p>
+            </div>
+          </div>
+
+        </div><!-- /.steps -->
+      </div>
+    </section>
+
+    <!-- ============================================
+      SEÇÃO 6 — GALERIA / FISIOTERAPIA EM AÇÃO
+      Layout Editorial Premium
+    ============================================= -->
+    <section class="gallery-editorial section-padding bg-white" id="galeria" aria-labelledby="gallery-title">
+      <div class="container">
+
+        <header class="gallery-editorial__header reveal">
+          <p class="section-label">Na prática</p>
+          <h2 class="section-title" id="gallery-title">
+            Fisioterapia em ação
+          </h2>
+          <p class="section-subtitle">
+            Cuidado, movimento e atenção individualizada em cada momento do atendimento.
+          </p>
+        </header>
+
+        <!-- Galeria horizontal: 3 atendimentos lado a lado -->
+        <div class="editorial-grid editorial-grid--three" role="region" aria-label="Fotos de atendimentos reais">
+
+          <figure class="editorial-card editorial-card--equal">
+            <div class="editorial-card__img-wrap">
+              <img
+                class="editorial-img img--editorial-1"
+                src="img/atendimento-03.jpeg"
+                alt="Mariana Domeneghetti orientando exercício funcional em paciente"
+                width="500"
+                height="620"
+                loading="lazy"
+              />
+            </div>
+            <figcaption class="editorial-card__caption">
+              <span class="editorial-card__tag">Exercício funcional</span>
+              <strong class="editorial-card__headline">Orientação ativa do movimento</strong>
+            </figcaption>
+          </figure>
+
+          <figure class="editorial-card editorial-card--equal">
+            <div class="editorial-card__img-wrap">
+              <img
+                class="editorial-img img--editorial-2"
+                src="img/atendimento-01.jpeg"
+                alt="Mariana Domeneghetti acompanhando exercício terapêutico com faixa elástica"
+                width="500"
+                height="620"
+                loading="lazy"
+              />
+            </div>
+            <figcaption class="editorial-card__caption">
+              <span class="editorial-card__tag">Treino com resistência</span>
+              <strong class="editorial-card__headline">Estabilidade e fortalecimento</strong>
+            </figcaption>
+          </figure>
+
+          <figure class="editorial-card editorial-card--equal">
+            <div class="editorial-card__img-wrap">
+              <img
+                class="editorial-img img--editorial-3"
+                src="img/atendimento-02.jpeg"
+                alt="Mariana Domeneghetti auxiliando alinhamento postural da paciente"
+                width="500"
+                height="620"
+                loading="lazy"
+              />
+            </div>
+            <figcaption class="editorial-card__caption">
+              <span class="editorial-card__tag">Acompanhamento postural</span>
+              <strong class="editorial-card__headline">Cuidado e alinhamento próximo</strong>
+            </figcaption>
+          </figure>
+
+        </div><!-- /.editorial-grid -->
+
+      </div>
+    </section>
+
+    <!-- ============================================
+      SEÇÃO 7 — CTA FINAL
+    ============================================= -->
+    <section class="cta-section" id="cta-final" aria-labelledby="cta-title">
+      <div class="container">
+        <div class="cta-section__inner reveal">
+          <p class="cta-section__label">Atendimento domiciliar</p>
+          <h2 class="cta-section__title" id="cta-title">
+            Vamos conversar sobre seu atendimento?
+          </h2>
+          <p class="cta-section__text">
+            Estou à disposição para entender sua necessidade e explicar como funciona o atendimento domiciliar.
+          </p>
+          <a
+            href="#"
+            class="btn btn-white btn-lg"
+            data-whatsapp
+            aria-label="Falar comigo pelo WhatsApp"
+            id="cta-final-btn"
+          >
+            <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
+            Falar comigo pelo WhatsApp
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================
+      SEÇÃO 8 — CONTATO
+    ============================================= -->
+    <section class="contact section-padding" id="contato" aria-labelledby="contact-title">
+      <div class="container">
+        <div class="contact__inner">
+
+          <!-- Informações de contato (Lado esquerdo) -->
+          <div class="contact__content reveal">
+            <p class="section-label">Contato</p>
+            <h2 class="contact__info-title" id="contact-title">
+              Fale comigo
+            </h2>
+            <p class="contact__info-text">
+              Os atendimentos de fisioterapia e Pilates são realizados a domicílio
+              e mediante contato prévio pelo WhatsApp. Será um prazer tirar suas
+              dúvidas e conversar sobre o seu acompanhamento.
+            </p>
+
+            <!-- Card único de WhatsApp -->
+            <div class="contact__single-card-wrap">
+              <a
+                href="#"
+                class="contact-card-single"
+                data-whatsapp
+                aria-label="Conversar com Mariana pelo WhatsApp"
+                id="contact-whatsapp"
+              >
+                <div class="contact-card-single__icon" aria-hidden="true">
+                  <i class="fa-brands fa-whatsapp"></i>
+                </div>
+                <div class="contact-card-single__body">
+                  <span class="contact-card-single__label">WhatsApp</span>
+                  <strong class="contact-card-single__action">Conversar pelo WhatsApp</strong>
+                  <span class="contact-card-single__desc">Clique para iniciar uma conversa comigo</span>
+                </div>
+                <div class="contact-card-single__arrow" aria-hidden="true">
+                  <i class="fa-solid fa-arrow-right"></i>
+                </div>
+              </a>
+            </div>
+
+            <!--
+              INSTAGRAM — Descomente quando o perfil profissional for criado:
+            <div class="contact__social-future">
+              <a href="https://instagram.com/PERFIL_REAL_AQUI" target="_blank" rel="noopener noreferrer">
+                <i class="fa-brands fa-instagram"></i>
+                <span>@HANDLE_REAL_AQUI</span>
+              </a>
+            </div>
+            -->
+
+          </div><!-- /.contact__content -->
+
+          <!-- Visual leve de saúde (Lado direito) -->
+          <div class="contact__wellness reveal reveal-delay-2" aria-hidden="true">
+            <div class="wellness-card">
+              <div class="wellness-card__icon-wrap">
+                <div class="wellness-card__icon">
+                  <i class="fa-solid fa-heart-pulse"></i>
+                </div>
+              </div>
+              <h3 class="wellness-card__title">Atendimento Humanizado</h3>
+              <p class="wellness-card__text">
+                Fisioterapia e Pilates no conforto do seu lar, com atenção personalizada voltada para o seu movimento e qualidade de vida.
+              </p>
+              <div class="wellness-card__list">
+                <div class="wellness-item">
+                  <div class="wellness-item__bullet">
+                    <i class="fa-solid fa-check"></i>
+                  </div>
+                  <span>Atenção individual e exclusiva</span>
+                </div>
+                <div class="wellness-item">
+                  <div class="wellness-item__bullet">
+                    <i class="fa-solid fa-check"></i>
+                  </div>
+                  <span>Ambiente familiar, seguro e acolhedor</span>
+                </div>
+                <div class="wellness-item">
+                  <div class="wellness-item__bullet">
+                    <i class="fa-solid fa-check"></i>
+                  </div>
+                  <span>Prática adaptada à sua rotina e realidade</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main><!-- /#main-content -->
+
+  <!-- ================================================
+    FOOTER
+  ================================================== -->
+  <footer class="footer" role="contentinfo" aria-label="Rodapé">
+    <div class="container">
+
+      <div class="footer__top">
+
+        <!-- Coluna 1: Marca -->
+        <div>
+          <p class="footer__brand-name">Mariana Domeneghetti</p>
+          <p class="footer__brand-tagline">Fisioterapia e Pilates</p>
+          <p class="footer__brand-text">
+            Atendimento fisioterapêutico domiciliar personalizado,
+            com foco em movimento e qualidade de vida.
+          </p>
+        </div>
+
+        <!-- Coluna 2: Navegação -->
+        <nav aria-label="Navegação do rodapé">
+          <p class="footer__col-title">Navegação</p>
+          <ul class="footer__nav-links">
+            <li><a href="#inicio"      class="footer__nav-link">Início</a></li>
+            <li><a href="#sobre"       class="footer__nav-link">Sobre mim</a></li>
+            <li><a href="#servicos"    class="footer__nav-link">Serviços</a></li>
+            <li><a href="#atendimento" class="footer__nav-link">Atendimento</a></li>
+            <li><a href="#contato"     class="footer__nav-link">Contato</a></li>
+          </ul>
+        </nav>
+
+        <!-- Coluna 3: Contato -->
+        <div>
+          <p class="footer__col-title">Contato</p>
+
+          <!-- WhatsApp no footer (href preenchido via JS) -->
+          <a href="#" class="footer__contact-item" data-whatsapp aria-label="Falar pelo WhatsApp">
+            <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
+            <span>WhatsApp</span>
+          </a>
+
+          <!--
+            Instagram — Descomente quando disponível:
+          <a
+            href="https://instagram.com/HANDLE_REAL_AQUI"
+            class="footer__contact-item"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Instagram de Mariana Domeneghetti"
+          >
+            <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+            <span>@HANDLE_REAL_AQUI</span>
+          </a>
+          -->
+
+        </div>
+
+      </div><!-- /.footer__top -->
+
+      <div class="footer__bottom">
+        <p class="footer__copy">
+          &copy; 2026 Mariana Domeneghetti. Todos os direitos reservados.
+        </p>
+        <p class="footer__dev">
+          Desenvolvido por
+          <!-- Adicione o href real quando o site da DomeneTech estiver disponível -->
+          <a href="#" rel="noopener" aria-label="DomeneTech — desenvolvimento web">DomeneTech</a>
+        </p>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- ================================================
+    BOTÃO WHATSAPP FLUTUANTE
+  ================================================== -->
+  <a
+    href="#"
+    class="whatsapp-float"
+    data-whatsapp
+    aria-label="Fale com Mariana pelo WhatsApp"
+    id="whatsapp-float-btn"
+    role="button"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    <!-- Texto visível no hover (desktop) -->
+    <span class="whatsapp-float__label" aria-hidden="true">Fale com a Mariana</span>
+    <!-- Botão ícone -->
+    <span class="whatsapp-float__btn" aria-hidden="true">
+      <i class="fa-brands fa-whatsapp"></i>
+    </span>
+  </a>
+
+  <!-- Scripts -->
+  <script src="js/script.js"></script>
+
+</body>
+</html>
